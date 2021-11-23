@@ -86,7 +86,118 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#backgroundImage {
 
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url("../img/fondEcran.jpeg");
+}
+
+.header {
+  width: 100%;
+}
+
+.title-size {
+  /*je créé une classe pour la taille des caractères*/
+  font-size: 30px;
+}
+#searchPeople {
+  width: 50%;
+  height: 10%;
+  left: 25%;
+  position: absolute;
+  top: 50%;
+}
+.searchPeople {
+  /*je créé une classe qui me permet de mettre en forme la barre de recherche*/
+  width: 50vw;
+  margin: 1rem;
+}
+
+.buttonSearch {
+  /*je créé une classe qui me permet de mettre en forme le bouton recherche*/
+  height: 4vh;
+  align-items: baseline;
+}
+
+#cartes {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+@media (min-width: 768px) {
+  #cartes {
+    top: 30%;
+    left: 15%;
+  }
+
+  .title-size {
+    /*je créé une classe pour la taille des caractères*/
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  #cartes {
+    top: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #backgroundImage {
+    width: 150vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-image: url("../img/fondEcranXL.jpg");
+  }
+
+  #cartes {
+    top: 35%;
+    left: 5%;
+  }
+  #searchPeople {
+    left: 5%;
+  }
+
+  .title-size {
+    /*je créé une classe pour la taille des caractères*/
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1441px) {
+  #backgroundImage {
+    width: 150vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-image: url("../img/fondEcranXXL.jpg");
+  }
+  #searchPeople {
+    left: 1%;
+  }
+  #cartes {
+    top: 25%;
+    left: 20%;
+  }
+  .title-size {
+    /*je créé une classe pour la taille des caractères*/
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 2000px) {
+  #cartes {
+    right: 60%;
+  }
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +371,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
