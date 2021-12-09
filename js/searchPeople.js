@@ -10,7 +10,7 @@ searchInputPeople.addEventListener("input", function() {           //je créer u
 
 
 const api = function () {
-fetch("http://swapi.dev/api/people/" + input + "/")
+fetch("https://swapi.dev/api/people/" + input + "/")
    .then((response) => response.json())
    .then((datapeople) => {
       console.log(datapeople)
