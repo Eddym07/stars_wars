@@ -1,6 +1,6 @@
 /*je récupère le nom des éléments qui ce trouve dans l'api swapi pour le mettre dans maes cartes et l'affiché à l'écran d'accueil*/
 
-fetch("http://swapi.dev/api/") //fetch = aller chercher) je vais chercher l'url, ensuite sur ce qui a était fait avant
+fetch("https://swapi.dev/api/") //fetch = aller chercher) je vais chercher l'url, ensuite sur ce qui a était fait avant
   .then((response) => response.json()) //ensuite sur ce qui a était fait avant je t'applique la méthode texte
   .then((data) => {
     for (const keys in data) {
